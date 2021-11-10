@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Mukta", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  background-color: rgb(17, 17, 17);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 40rem;
+  background: #1a1a1a;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .headerInformation img {
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+  border: 0.5rem solid #1a1a1a;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+header .headerInformation .name {
+  font-size: 3rem;
+  color: #fff;
+}
+
+header .headerInformation .position {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header .navbar {
+  width: 100%;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li a {
+  background: #333;
+  color: #fff;
+  border-radius: 5rem;
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+
+header .navbar ul li a:hover {
+  background: rgb(13, 128, 57);
+}
