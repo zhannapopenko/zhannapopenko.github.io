@@ -130,6 +130,44 @@ section {
   background: rgb(13, 128, 57);
 }
 
+.education .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+.education .container .item {
+  position: relative;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  width: 40rem;
+  height: 20rem;
+  border-left: 0.2rem solid rgba(8, 116, 31, 0.267);
+}
+
+.education .container .item span {
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  padding: 0.5rem 3rem;
+  background: #222;
+  color: #fff;
+}
+
+.education .container .item h3 {
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  color: #fff;
+}
+
+.education .container .item p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 50%;
