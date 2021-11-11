@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
   outline: none;
   border: none;
@@ -18,6 +17,7 @@ html {
 
 body {
   background-color: rgb(17, 17, 17);
+  padding-left: 40rem;
 }
 
 header {
@@ -60,19 +60,103 @@ header .navbar {
 
 header .navbar ul {
   list-style: none;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 
 header .navbar ul li a {
+  display: block;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 5rem;
   background: #333;
   color: #fff;
-  border-radius: 5rem;
-  display: block;
-  padding: 1rem;
-  margin: 1.5rem 0;
-  font-size: 2rem;
 }
 
 header .navbar ul li a:hover {
   background: rgb(13, 128, 57);
+}
+
+.heading {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 3rem;
+  font-size: 4rem;
+  border-bottom: 0.1rem solid rgba(8, 116, 31, 0.267);
+}
+
+.heading span {
+  color: rgb(13, 128, 57);
+}
+
+.about {
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+  font-size: 2rem;
+}
+.about span {
+  color: rgb(13, 128, 57);
+}
+.about h1 {
+  font-size: 3.5rem;
+}
+
+.about p {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem 0;
+}
+
+.button {
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 0.5rem 3.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 5rem;
+}
+
+.button:hover {
+  background: rgb(13, 128, 57);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+  .about {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    left: -100%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 400px) {
+  header {
+    width: 100vw;
+  }
+  .heading {
+    margin: 0 2rem;
+  }
 }
