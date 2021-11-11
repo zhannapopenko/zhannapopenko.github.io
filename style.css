@@ -90,6 +90,10 @@ header .navbar ul li a:hover {
   color: rgb(13, 128, 57);
 }
 
+i {
+  margin: 1rem;
+}
+
 .about {
   color: #fff;
   display: flex;
@@ -183,7 +187,7 @@ section {
   margin-left: 3rem;
 }
 
-.GitHubButton {
+.github-button {
   background: #333;
   color: #fff;
   margin-top: 2rem;
@@ -193,7 +197,7 @@ section {
   border-radius: 5rem;
 }
 
-.GitHubButton:hover {
+.github-button:hover {
   background: rgb(13, 128, 57);
 }
 
