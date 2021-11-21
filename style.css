@@ -135,7 +135,7 @@ section {
   padding: 1rem 0;
 }
 
-.button {
+.cv-button {
   background: #333;
   color: #fff;
   margin-top: 2rem;
@@ -145,7 +145,7 @@ section {
   border-radius: 5rem;
 }
 
-.button:hover {
+.cv-button:hover {
   background: rgb(13, 128, 57);
 }
 
@@ -154,8 +154,8 @@ section {
   align-items: flex-start;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 1rem 0;
-  padding-left: 3rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0 15rem 0;
 }
 
 .education .container .item {
@@ -241,6 +241,42 @@ section {
   color: #fff;
 }
 
+.progress {
+  width: 100%;
+  max-width: 80px;
+  height: 10px;
+  background: rgba(129, 129, 129, 0.267);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #ee8207,
+    #e5e907 17%,
+    #3deb11 34%,
+    #05ca50 51%,
+    #07dabd 68%,
+    #0e9fd8 85%,
+    #094ddf
+  );
+  background-size: 300% 100%;
+  animation: progress-animation 2s linear infinite;
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}
+
 .contact {
   display: flex;
   align-items: center;
@@ -268,6 +304,16 @@ section {
   color: #fff;
   padding: 1rem 0;
   font-weight: normal;
+}
+
+.on-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  display: none;
+  width: 3rem;
+  height: 3rem;
 }
 
 @media (max-width: 1200px) {
@@ -321,6 +367,9 @@ section {
     margin: 0 2rem;
   }
 
+  .education .container {
+    margin: 2rem;
+  }
   .experience {
     font-size: 2rem;
     padding: 0 5rem;
