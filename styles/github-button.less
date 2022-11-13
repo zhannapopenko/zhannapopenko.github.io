@@ -1,0 +1,90 @@
+@import "main";
+
+.github-button {
+    min-width: 300px;
+    min-height: 60px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    background: linear-gradient(90deg, @light-green 0%, @dark-green 100%);
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.github-button::before {
+    content: '';
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid @green;
+    border-radius: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.github-button:hover,
+.github-button:focus {
+    transform: translateY(-6px);
+}
+
+.github-button:hover::before,
+.github-button:focus::before {
+    opacity: 1;
+}
+
+.github-button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid @green;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.github-button:hover::after,
+.github-button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+@media @sm {
+    .github-button {
+        text-align: center;
+        min-width: 250px;
+        min-height: 50px;
+    }
+
+    .github-button::before {
+        content: '';
+        min-width: calc(250px + 12px);
+        min-height: calc(50px + 12px);
+    }
+}

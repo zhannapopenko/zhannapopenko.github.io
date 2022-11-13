@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zhanna Popenko</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="headerInformation">
-        <img src="./images/avatar.jpg" alt="avatar" />
-        <h4 class="name">Zhanna Popenko</h4>
-        <h6 class="position">Front-End developer</h6>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Zhanna Popenko</title>
+  <link rel="shortcut icon" href="/images/cv.png" type="image/x-icon">
+  <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+  <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
+  <link rel="stylesheet/less" type="text/css" href="styles/github-button.less" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="headerInfo">
+      <img src="./images/avatar.jpg" alt="avatar" />
+      <h4 class="name">Zhanna Popenko</h4>
+      <h6 class="position">Front-End Developer</h6>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i>About Me</a>
+        </li>
+        <li>
+          <a href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
+        </li>
+        <li>
+          <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fas fa-code"></i>Skills</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-address-book"></i>Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <menu class="fas fa-bars"></menu>
+  <main>
+    <section class="about" id="about">
+      <h3 class="heading"><span>About</span> me</h3>
+
+      <div class="container">
+        <h2>Hi there!</h2>
+        <h1>My name is <span>Zhanna Popenko</span></h1>
+        <h3>I'm a Front-End Developer</h3>
+        <p>
+          My main tech stack is HTML, CSS (Less, SCSS), JS, React. Also I have experiance with Angular and TypeScript.
+          When I practiced with Front-End development I have also worked with Git, Axios, Material UI, Ant Design,
+          Styled-Components and Nebular.
+          I completed programming courses and also studied a lot myself. I have been working as a Front-End developer
+          since January 2022. You can learn more about my education and work experience below. Thank you for your
+          attention.
+        </p>
+        <a href="./cv-file/Zhanna_Popenko_Front-End_Developer.PDF" download>
+          <button class="cv-button">
+            <i class="fas fa-download"></i>
+            Download CV
+          </button>
+        </a>
       </div>
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="#about"><i class="fas fa-user"></i>About Me</a>
-          </li>
-          <li>
-            <a href="#education"
-              ><i class="fas fa-graduation-cap"></i>Education</a
-            >
-          </li>
-          <li>
-            <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
-          </li>
-          <li>
-            <a href="#skills"><i class="fas fa-code"></i>Skills</a>
-          </li>
-          <li>
-            <a href="#contact"><i class="fas fa-address-book"></i>Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <menu class="fas fa-bars"></menu>
-    <h3 class="heading" id="about"><span>About</span> me</h3>
-    <section class="about">
-      <h2>Hi there!</h2>
-      <h1>I'm <span>Zhanna Popenko</span></h1>
-      <p>
-        I learned HTML and CSS on the online platform Codecademy. I watched
-        JavaScript courses such as ITVDN JavaScript Starter and ITVDN JavaScript
-        Essentials. Also, I passed the course "The Way of the Samurai" on
-        YouTube to learn React / Redux. When I practiced with front-end
-        development I have also worked with Axios, Material UI, Redux Form and
-        Git.
-      </p>
-      <a href="./CV/Zhanna_Popenko_Front-End_Developer.PDF" download>
-        <button class="cv-button">
-          <i class="fas fa-download"></i>
-          Download CV
-        </button>
-      </a>
     </section>
 
     <section class="education" id="education">
@@ -73,106 +80,119 @@
 
         <div class="item">
           <span>2021</span>
-          <h3>Codecademy</h3>
-          <p>learned HTML/CSS and performed practical tasks.</p>
+          <h3>Platform Codecademy</h3>
+          <p>Learned HTML/CSS and performed practical tasks.</p>
         </div>
 
         <div class="item">
           <span>2021</span>
-          <h3>ITVDN JavaScript Starter/ITVDN JavaScript Essentials</h3>
-          <p>Passed and learned JavaScript courses.</p>
+          <h3>ITVDN courses "JavaScript Starter"/"JavaScript Essentials"</h3>
+          <p>Learned JavaScript.</p>
         </div>
 
         <div class="item">
           <span>2021</span>
           <h3>Course "The Way of the Samurai"</h3>
           <p>
-            learned React/Redux. Also learned libraries such as Axios, Redux
+            Learned React/Redux. Also learned libraries such as Axios, Redux
             Form, Material UI.
           </p>
+        </div>
+
+        <div class="item">
+          <span>2022</span>
+          <h3>ITVDN course "TypeScript Fundamentals"</h3>
+          <p>Learned TypeScript.</p>
+        </div>
+
+        <div class="item">
+          <span>2022</span>
+          <h3>Genesis course "Genesis Front-End School"</h3>
+          <p>Passed main Front-End Technologies - HTML, CSS, TypeScript, React. Also learned how to work on the project
+            with a team.</p>
         </div>
       </div>
     </section>
 
-    <h3 class="heading" id="experience">My <span>experience</span></h3>
-    <section class="experience">
-      <a href="https://github.com/zhannapopenko" target="_blank"
-        ><button class="github-button">
-          <i class="fab fa-github"></i>Go to GitHub
-        </button></a
-      >
+    <section class="experience" id="experience">
+      <h3 class="heading">My <span>experience</span></h3>
+
+      <div class="container">
+        <a href="https://github.com/zhannapopenko" target="_blank">
+          <button class="github-button">
+            <i class="fab fa-github"></i>Go to GitHub
+          </button>
+        </a>
+      </div>
     </section>
 
     <section class="skills" id="skills">
       <h3 class="heading">My <span>skills</span></h3>
 
       <div class="container">
-        <div class="item">
-          <lable>HTML</lable>
-          <div class="progress">
-            <span class="progress-bar" style="width: 85%"></span>
-          </div>
-        </div>
+        <ul>
+          <li>
+            <span>HTML</span>
+          </li>
+          <li>
+            <span>CSS/Less/SCSS</span>
+          </li>
+          <li>
+            <span>JavaScript</span>
+          </li>
+          <Li>
+            <span>TypeScript</span>
+          </Li>
+          <li>
+            <span>React/Redux</span>
+          </li>
+          <li>
+            <span>Angular</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span>Material UI</span>
+          </li>
+          <li>
+            <span>Ant Design</span>
+          </li>
+          <li>
+            <span>Styled-Components</span>
+          </li>
+          <li>
+            <span>Nebular</span>
+          </li>
+          <li>
+            <span>Git</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="item">
-          <lable>CSS</lable>
-          <div class="progress">
-            <span class="progress-bar" style="width: 75%"></span>
-          </div>
-        </div>
+    <section class="contact" id="contact">
+      <h3 class="heading"><span>Contact</span> me</h3>
 
-        <div class="item">
-          <lable>JavaScript</lable>
-          <div class="progress">
-            <span class="progress-bar" style="width: 65%"></span>
-          </div>
-        </div>
-
-        <div class="item">
-          <lable>React/Redux</lable>
-          <div class="progress">
-            <span class="progress-bar" style="width: 70%"></span>
-          </div>
-        </div>
-
-        <div class="item">
-          <lable>Git</lable>
-          <div class="progress">
-            <span class="progress-bar" style="width: 45%"></span>
-          </div>
-        </div>
-
-        <div class="item">
-          <lable>Material UI</lable>
-          <div class="progress">
-            <span class="progress-bar" style="width: 70%"></span>
-          </div>
-        </div>
-        <div class="item">
-          <lable>Redux Form</lable>
-          <div class="progress">
-            <span class="progress-bar" style="width: 35%"></span>
+      <div class="container">
+        <div class="content">
+          <h3 class="title">Contact Info:</h3>
+          <div class="info">
+            <h3><i class="fas fa-envelope"></i>zpopenko7@gmail.com</h3>
+            <h3><i class="fa fa-user"></i>
+              <a href="https://www.linkedin.com/in/zhanna-popenko-7b4709195/" target="_blank">LinkedIn
+              </a>
+            </h3>
+            <h3><i class="fas fa-map-marker-alt"></i>Vancouver, Canada</h3>
           </div>
         </div>
       </div>
     </section>
+  </main>
+  <a href="#about">
+    <img class="on-top" src="./images/arrow-up.png" alt="arrow-up" />
+  </a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</body>
 
-    <h3 class="heading" id="contact"><span>Contact</span> me</h3>
-    <section class="contact">
-      <div class="content">
-        <h3 class="title">CONTACT INFO</h3>
-
-        <div class="info">
-          <h3><i class="fas fa-envelope"></i>zpopenko7@gmail.com</h3>
-          <h3><i class="fas fa-phone"></i>+380670062507</h3>
-          <h3><i class="fas fa-map-marker-alt"></i>Lviv, Ukraine</h3>
-        </div>
-      </div>
-    </section>
-    <a href="#about">
-      <img class="on-top" src="./images/arrow-up.png" alt="arrow-up" />
-    </a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./script.js"></script>
-  </body>
 </html>

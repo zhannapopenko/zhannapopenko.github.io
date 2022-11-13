@@ -1,0 +1,326 @@
+@import "main";
+
+html {
+  font-size: 65%;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: @body-background;
+  padding-left: 40rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 40rem;
+  background-color: @header-background;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .headerInfo {
+    img {
+      height: 20rem;
+      width: 20rem;
+      padding: 1rem;
+      margin-top: 25%;
+      border: 0.5rem solid @header-background;
+      border-radius: 20%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 3rem;
+    }
+
+    .position {
+      font-size: 2rem;
+    }
+  }
+
+  nav {
+    width: 100%;
+    padding-bottom: 5rem;
+
+    ul {
+      list-style: none;
+
+      li a {
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin: 1rem 5rem;
+        border-radius: 5rem;
+        background-color: @grey;
+      }
+
+      li a:hover {
+        background-color: @light-green;
+
+      }
+    }
+  }
+}
+
+.heading {
+  padding: 1rem;
+  margin: 0 3rem;
+  text-align: center;
+  font-size: 4rem;
+  border-bottom: 0.1rem solid @dark-green;
+
+  span {
+    color: @light-green;
+  }
+}
+
+i {
+  margin: 1rem;
+}
+
+menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background-color: @grey;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+section {
+  min-height: 100vh;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.about .container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 4rem;
+  height: 100%;
+  font-size: 2rem;
+
+  span {
+    color: @light-green;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+
+  .cv-button {
+    letter-spacing: 2.5px;
+    background-color: @grey;
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5rem;
+  }
+
+  .cv-button:hover {
+    background-color: @light-green;
+  }
+}
+
+.education .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 6rem 4rem;
+
+  .item {
+    position: relative;
+    margin: 0 1rem;
+    padding-left: 4rem;
+    width: 40rem;
+    height: 20rem;
+    border-left: 0.1rem solid @dark-green;
+
+    span {
+      font-size: 1.5rem;
+      background-color: @dark-grey;
+      border-radius: 5rem;
+      padding: 0.5rem 3rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      padding-top: 1.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+  }
+}
+
+.experience .container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 88vh;
+  padding: 4rem;
+  font-size: 2rem;
+}
+
+
+.skills .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+  margin: 6rem auto;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+      min-width: 20rem;
+      margin: 1rem;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.contact .container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 88vh;
+  padding: 4rem;
+  letter-spacing: 3px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .info {
+      h3 {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: normal;
+      }
+
+      a {
+        color: @text;
+        font-size: 2rem;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: @light-green;
+      }
+    }
+  }
+}
+
+.on-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+}
+
+@media @xl {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media @lg {
+  header {
+    left: -120%;
+  }
+
+  header.toggle {
+    left: 0%;
+  }
+
+  menu {
+    visibility: visible;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media @md {
+  html {
+    font-size: 50%;
+  }
+
+  .about .container {
+    padding: 6rem 4rem;
+  }
+}
+
+@media @sm {
+  .about .container p {
+    text-align: center;
+  }
+
+  .skills .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 4rem;
+
+    ul {
+      gap: 0;
+    }
+  }
+}
+
+@media @xs {
+  html {
+    font-size: 45%;
+  }
+
+  header {
+    width: 100vw;
+  }
+
+  .heading {
+    margin: 0 2rem;
+  }
+}
